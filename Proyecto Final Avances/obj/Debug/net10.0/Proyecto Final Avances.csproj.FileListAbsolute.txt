@@ -1,0 +1,14 @@
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\bin\Debug\net10.0\Proyecto Final Avances.exe
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\bin\Debug\net10.0\Proyecto Final Avances.deps.json
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\bin\Debug\net10.0\Proyecto Final Avances.runtimeconfig.json
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\bin\Debug\net10.0\Proyecto Final Avances.dll
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\bin\Debug\net10.0\Proyecto Final Avances.pdb
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\obj\Debug\net10.0\Proyecto Final Avances.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\obj\Debug\net10.0\Proyecto Final Avances.AssemblyInfoInputs.cache
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\obj\Debug\net10.0\Proyecto Final Avances.AssemblyInfo.cs
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\obj\Debug\net10.0\Proyecto Final Avances.csproj.CoreCompileInputs.cache
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\obj\Debug\net10.0\Proyecto Final Avances.dll
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\obj\Debug\net10.0\refint\Proyecto Final Avances.dll
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\obj\Debug\net10.0\Proyecto Final Avances.pdb
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\obj\Debug\net10.0\Proyecto Final Avances.genruntimeconfig.cache
+C:\Users\Tomas\source\repos\Proyecto Final Avances\Proyecto Final Avances\obj\Debug\net10.0\ref\Proyecto Final Avances.dll
