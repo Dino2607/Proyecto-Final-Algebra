@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Tomas\\source\\repos\\Proyecto Final Avances\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC6F2B3A-A62D-4935-9B2A-34FA0ABC037F}|Proyecto Final Avances\\Proyecto Final Avances.csproj|c:\\users\\tomas\\source\\repos\\proyecto final avances\\proyecto final avances\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC6F2B3A-A62D-4935-9B2A-34FA0ABC037F}|Proyecto Final Avances\\Proyecto Final Avances.csproj|solutionrelative:proyecto final avances\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C5421F19-DF4E-7965-CB2F-7FACD9C074C6}|Proyecto Final Avances\\Proyecto Final Avances.csproj|c:\\users\\tomas\\source\\repos\\proyecto final avances\\proyecto final avances\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5421F19-DF4E-7965-CB2F-7FACD9C074C6}|Proyecto Final Avances\\Proyecto Final Avances.csproj|solutionrelative:proyecto final avances\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,7 +24,7 @@
               "RelativeDocumentMoniker": "Proyecto Final Avances\\Program.cs",
               "ToolTip": "C:\\Users\\Tomas\\source\\repos\\Proyecto Final Avances\\Proyecto Final Avances\\Program.cs",
               "RelativeToolTip": "Proyecto Final Avances\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAOYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAIwOYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-20T22:20:05.468Z",
               "EditorCaption": ""
