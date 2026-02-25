@@ -14,10 +14,11 @@ class Program
             Console.WriteLine("============================================");
             Console.WriteLine("1. Saludo");
             Console.WriteLine("2. Fecha y hora actual");
-            Console.WriteLine("3. Multiplicación de matrices 2x2");
+            Console.WriteLine("3. Multiplicación de matrices 3x3");
             Console.WriteLine("4. Determinante por Sarrus 3x3");
             Console.WriteLine("5. Sistema de ecuaciones 2x2");
-            Console.WriteLine("6. Salir");
+            Console.WriteLine("6. Sistemas de ecuaciones 4x4Gauss");
+            Console.WriteLine("7. Salir");
             Console.WriteLine("============================================");
             Console.Write("Seleccione una opción: ");
             opcion = int.Parse(Console.ReadLine());
@@ -31,7 +32,7 @@ class Program
                     MostrarHora();
                     break;
                 case 3:
-                    MultiplicarMatrices();
+                    MultiplicarMatrices3x3();
                     break;
                 case 4:
                     Sarrus3x3();
@@ -40,6 +41,9 @@ class Program
                     SistemaEcuaciones();
                     break;
                 case 6:
+                    Gauss4x4();
+                    break;
+                case 7:
                     Console.WriteLine("\nGracias por usar el sistema.");
                     break;
                 default:
@@ -55,6 +59,10 @@ class Program
 
         } while (opcion != 6);
     }
+
+
+
+
 
     // ================== SALUDO ==================
     static void Saludar()
@@ -74,45 +82,62 @@ class Program
     }
 
     // ================== MULTIPLICAR MATRICES ==================
-    static void MultiplicarMatrices()
+
+
+    // ================== MULTIPLICACIÓN MATRICES 3x3 ==================
+    static void MultiplicarMatrices3x3()
     {
         Console.Clear();
-        Console.WriteLine("MULTIPLICACIÓN DE MATRICES 2x2\n");
+        Console.WriteLine("MULTIPLICACIÓN DE MATRICES 3x3\n");
 
-        int[,] A = new int[2, 2];
-        int[,] B = new int[2, 2];
-        int[,] R = new int[2, 2];
+        int[,] A = new int[3, 3];
+        int[,] B = new int[3, 3];
+        int[,] R = new int[3, 3];
 
-        Console.WriteLine("Matriz A:");
-        for (int i = 0; i < 2; i++)
-            for (int j = 0; j < 2; j++)
+        Console.WriteLine("Ingrese los valores de la matriz A:");
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
             {
                 Console.Write($"A[{i},{j}]: ");
                 A[i, j] = int.Parse(Console.ReadLine());
             }
+        }
 
-        Console.WriteLine("\nMatriz B:");
-        for (int i = 0; i < 2; i++)
-            for (int j = 0; j < 2; j++)
+        Console.WriteLine("\nIngrese los valores de la matriz B:");
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
             {
                 Console.Write($"B[{i},{j}]: ");
                 B[i, j] = int.Parse(Console.ReadLine());
             }
+        }
 
-        for (int i = 0; i < 2; i++)
-            for (int j = 0; j < 2; j++)
-                for (int k = 0; k < 2; k++)
-                    R[i, j] += A[i, k] * B[k, j];
-
-        Console.WriteLine("\nResultado:");
-        for (int i = 0; i < 2; i++)
+        // Multiplicación
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < 2; j++)
+            for (int j = 0; j < 3; j++)
+            {
+                R[i, j] = 0;
+                for (int k = 0; k < 3; k++)
+                {
+                    R[i, j] += A[i, k] * B[k, j];
+                }
+            }
+        }
+
+        // Mostrar resultado
+        Console.WriteLine("\nMatriz resultado (A x B):");
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
                 Console.Write(R[i, j] + "\t");
+            }
             Console.WriteLine();
         }
     }
-
     // ================== SARRUS 3x3 ==================
     static void Sarrus3x3()
     {
@@ -160,19 +185,57 @@ class Program
         double f = double.Parse(Console.ReadLine());
 
         double det = a * e - b * d;
+    }
+    private static void Gauss4x4()
+    {
+        Console.Clear();
+        int n = 4;
+        double[,] matriz = new double[n, n + 1];
+        double[] solucion = new double[n];
 
-        if (det == 0)
+        Console.WriteLine("SISTEMA DE ECUACIONES 4x4 - MÉTODO DE GAUSS\n");
+        Console.WriteLine("Ingrese los coeficientes y términos independientes:\n");
+
+        for (int i = 0; i < n; i++)
         {
-            Console.WriteLine("\nEl sistema no tiene solución única.");
+            Console.WriteLine($"Ecuación {i + 1}:");
+            for (int j = 0; j < n + 1; j++)
+            {
+                Console.Write($"Elemento [{i},{j}]: ");
+                matriz[i, j] = double.Parse(Console.ReadLine());
+            }
         }
-        else
-        {
-            double x = (c * e - b * f) / det;
-            double y = (a * f - c * d) / det;
 
-            Console.WriteLine($"\nSolución:");
-            Console.WriteLine($"x = {x}");
-            Console.WriteLine($"y = {y}");
+        // Eliminación de Gauss
+        for (int k = 0; k < n - 1; k++)
+        {
+            for (int i = k + 1; i < n; i++)
+            {
+                double factor = matriz[i, k] / matriz[k, k];
+
+                for (int j = k; j < n + 1; j++)
+                {
+                    matriz[i, j] -= factor * matriz[k, j];
+                }
+            }
+        }
+
+        // Sustitución hacia atrás
+        for (int i = n - 1; i >= 0; i--)
+        {
+            solucion[i] = matriz[i, n];
+            for (int j = i + 1; j < n; j++)
+            {
+                solucion[i] -= matriz[i, j] * solucion[j];
+            }
+            solucion[i] /= matriz[i, i];
+        }
+
+        // Mostrar resultados
+        Console.WriteLine("\nSolución del sistema:");
+        for (int i = 0; i < n; i++)
+        {
+            Console.WriteLine($"x{i + 1} = {solucion[i]}");
         }
     }
 }
