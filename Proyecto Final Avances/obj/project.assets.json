@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tomas\\source\\repos\\Proyecto Final Avances\\Proyecto Final Avances\\Proyecto Final Avances.csproj",
-      "projectName": "Proyecto Final Avances",
-      "projectPath": "C:\\Users\\Tomas\\source\\repos\\Proyecto Final Avances\\Proyecto Final Avances\\Proyecto Final Avances.csproj",
+      "projectUniqueName": "C:\\Users\\Tomas\\source\\repos\\Proyecto Final Avances\\Proyecto Final Avances\\Proyecto terminado.csproj",
+      "projectName": "Proyecto terminado",
+      "projectPath": "C:\\Users\\Tomas\\source\\repos\\Proyecto Final Avances\\Proyecto Final Avances\\Proyecto terminado.csproj",
       "packagesPath": "C:\\Users\\Tomas\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Tomas\\source\\repos\\Proyecto Final Avances\\Proyecto Final Avances\\obj\\",
       "projectStyle": "PackageReference",
